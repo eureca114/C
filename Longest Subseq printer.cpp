@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
-main()
+int main()
 {
-	int x,count[]={1,0},max[]={0,0};
+	int x,count[2],max[2];
+	count[0]=1,count[1]=0,max[0]=0,max[1]=1;
 	printf("Enter the number of numbers you wanna enter-");
 	scanf("%d",&x);
 	int a[x];
@@ -22,4 +22,5 @@ main()
 	}
 	if(max[0]<count[0]) max[0]=count[0],max[1]=count[1];
 	for(int i=max[1];i<(max[1]+max[0]);i++) printf("%d\n",a[i]);
+	return 0;
 }
